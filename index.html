@@ -96,7 +96,7 @@ src: url('chrome-extension://liecbddmkiiihnedobmlmillhodjkdmb/fonts/CircularXXWe
                 const script = document.createElement('script');
                 script.src = "https://otpless.com/v4/headless.js";
                 script.id = "otpless-sdk";
-                script.setAttribute('data-appid', '47JNO5SNY98OZ0ADIS42');
+                script.setAttribute('data-appid', 'Your app id');
                 script.onload = function () {
                     const OTPless = Reflect.get(window, "OTPless")
                     OTPlessSignin = new OTPless(callback);
