@@ -76,13 +76,13 @@ src: url('chrome-extension://liecbddmkiiihnedobmlmillhodjkdmb/fonts/CircularXXWe
 <button onclick="oauth('WHATSAPP')">WHATSAPP</button>
 <button onclick="oauth('GMAIL')">GMAIL</button>
 <button onclick="oauth('TRUE_CALLER')">TRUE_CALLER</button> 
-<div>
+<!-- <div>
     <button onclick="verifySession()">Verify Session</button>
     <button onclick="logoutSession()">Logout Session</button>
     <button onclick="getChannels()">Get Channels</button>
     <button onclick="getCountryCodes()">Get CountryCodes</button>
 </div>
-
+ -->
 <div id="response"></div>
 
 <!-- Helper Script -->
@@ -226,25 +226,25 @@ src: url('chrome-extension://liecbddmkiiihnedobmlmillhodjkdmb/fonts/CircularXXWe
         console.log({ verify })
     }
 
-    async function getChannels() {
-        await OTPlessSdk();
-        OTPlessSignin.getConfig().then(appendResponse);
-    }
+    // async function getChannels() {
+    //     await OTPlessSdk();
+    //     OTPlessSignin.getConfig().then(appendResponse);
+    // }
 
-    async function getCountryCodes(params) {
-        await OTPlessSdk();
-        OTPlessSignin.getCountryCodes().then(appendResponse);
-    }
+    // async function getCountryCodes(params) {
+    //     await OTPlessSdk();
+    //     OTPlessSignin.getCountryCodes().then(appendResponse);
+    // }
 
-    async function verifySession() {
-        await OTPlessSdk();
-        OTPlessVerifySession().then(appendResponse)
-    }
+    // async function verifySession() {
+    //     await OTPlessSdk();
+    //     OTPlessVerifySession().then(appendResponse)
+    // }
 
-    async function logoutSession() {
-        await OTPlessSdk();
-        OTPlessLogout().then(appendResponse)
-    }
+    // async function logoutSession() {
+    //     await OTPlessSdk();
+    //     OTPlessLogout().then(appendResponse)
+    // }
 
     OTPlessSdk();
 </script>
